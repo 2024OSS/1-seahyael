@@ -82,23 +82,35 @@
         .uppadding {
             padding-top: 10px;
         }
+
+        .black{
+            color: black;
+        }
+
+        .noline{
+            text-decoration: none;
+        }
+
+        .text{
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <div id="top">
-        <h1 class="white padding0 uppadding">Welcome to My Homepage</h1>
+        <h1 class="white padding0 uppadding">Welcome to 22300045's Homepage</h1>
         <p class="white padding0 downpadding">Use the menu to select different Stylesheets</p>
     </div>
 
     <div>
         <div id="leftmenu">
             <ul class="nodots">
-                <li class="menu1">Stylesheet 1</li>
-                <li class="menu">Stylesheet 2</li>
+                <li class="menu1"><a href="./style1.html" class="white noline">Stylesheet 1</a></li>
+                <li class="menu"><a href="./style2.html" class="black noline">Stylesheet 2</a></li>
                 <li class="menu">Stylesheet 3</li>
                 <li class="menu">Stylesheet 4</li>
-                <li class="menu">No Stylesheet</li>
+                <li class="menu"><a href="./nostyle.html" class="black noline">No Stylesheet</a></li>
             </ul>
         </div>
 
@@ -120,10 +132,10 @@
                 layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
                 links:
                 <br>
-                <a href="./style1.html">Stylesheet1,</a>
-                <a>Stylesheet2,</a>
-                <a>Stylesheet3,</a>
-                <a>Stylesheet4.</a>
+                <a href="./style1.html" class = "black">Stylesheet1,</a>
+                <a href="./style2.html" class = "black">Stylesheet2,</a>
+                <a class="text">Stylesheet3,</a>
+                <a class="text">Stylesheet4.</a>
             </p>
 
             <h2>No Styles</h2>
@@ -131,7 +143,7 @@
                 looks
                 like with no stylesheet:
                 <br>
-                <a href="https://ubiquitous-cranachan-a660da.netlify.app/nostyle">No Stylesheet.</a>
+                <a href="https://ubiquitous-cranachan-a660da.netlify.app/nostyle" class = "black">No Stylesheet.</a>
             </p>
         </div>
 

@@ -5,48 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        div#top{
+            color: #ffffff;
+            font-size: 25px;
+            padding: 15px;
+            line-height: 0.9;
+        }
+
+        div#main{
+            background-color: #ffffff;
+            padding: 10px;
+            font: 70% Verdana;
+        }
+
+        div#menu{
+            float: right;
+            width:190px;
+            height: 266px; 
+            line-height: 25px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        div#sidebar{
+            background-color: #F6DAD7;
+            padding: 5px;
+            font-size: 13px;
+            padding-left: 10px;
+        }
+
+        div#down{
+            color: #ffffff;
+            text-align: center;
+            font-size: 9px;
+            line-height: 15px;
+        }
+
+        .redback{
+            background-color: #d14836;
+            margin: 10px;
+            border-radius: 500px;
+            border: 1px solid #d14836;
+        }
+
+        .whiteback{
+            margin: 10px;
+            border-radius: 500px;
+            border: 1px solid #d14836;
+        }
+
+        .white{
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .red{
+            color:#d14836;
+            text-decoration: none;
+        }
+
+        .padding0{
+            margin-top: -10px;
+        }
+
+        .nodots {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .background{
+            background-color: #d14836;
+            font-family: Arial;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Welcome to My Homepage</h1>
-    <p>Use the menu to select different Stylesheets</p>
-    <ul>
-        <li>Stylesheet 1</li>
-        <li>Stylesheet 2</li>
-        <li>Stylesheet 3</li>
-        <li>Stylesheet 4</li>
-        <li>No Stylesheet</li>
-    </ul>
-    <h1>Same Page Different Stylesheets</h1>
-    <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the
-        layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
-        <br>
-        <a>Stylesheet1,</a>
-        <a>Stylesheet2,</a>
-        <a>Stylesheet3,</a>
-        <a>Stylesheet4.</a>
-    </p>
+<body class = "background">
+    <div id = "top">
+        <h1 class = "padding0">Welcome to 22300045's Homepage</h1>
+        <p class = "padding0">Use the menu to select different Stylesheets</p>
+    </div>
 
-    <h2>No Styles</h2>
-    <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
-        like with no stylesheet:
-        <br>
-        <a href="https://ubiquitous-cranachan-a660da.netlify.app/nostyle">No Stylesheet.</a>
-    </p>
+    <div id = "menu">
+        <ul>
+            <li class = "nodots redback white"><a href = "./style1.html" class = "white">Stylesheet 1</a></li>
+            <li class = "nodots red whiteback"><a href = "./style2.html" class = "red">Stylesheet 2</a></li>
+            <li class = "nodots redback white">Stylesheet 3</li>
+            <li class = "nodots redback white">Stylesheet 4</li>
+            <li class = "nodots redback white"><a href = "./nostyle.html" class = "white">No Stylesheet</a></li>
+        </ul>
+    </div>
 
-    <h3>Side-Bar</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore
-        magna aliquam erat volutpat.
+    <div id = "main">
+        <h1 class = "red">Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+            the
+            layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+            links:
+            <br>
+            <a href = "./style1.html" class = "red">Stylesheet1,</a>
+            <a href = "./style2.html" class = "red">Stylesheet2,</a>
+            <a class = "red">Stylesheet3,</a>
+            <a class = "red">Stylesheet4.</a>
+        </p>
 
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore
-        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-        lobortis
-        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-        qui
-        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <h2 class = "red">No Styles</h2>
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+            looks
+            like with no stylesheet:
+            <br>
+            <a href="https://ubiquitous-cranachan-a660da.netlify.app/nostyle" class = "red">No Stylesheet.</a>
+        </p>
+
+    </div>
+
+    <div id = "sidebar">
+        <h3 class = "red">Side-Bar</h3>
+        <p class = "red">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore
+            magna aliquam erat volutpat.
+        </p>
+    </div>
+
+    <div id = "down">
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore
+            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+            lobortis
+            nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+            esse
+            molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+            dignissim
+            qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </p>
+    </div>
+
 </body>
 
 </html>
